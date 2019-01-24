@@ -1,7 +1,6 @@
-const Jen = require('node-jen');
+import { password } from './generator';
 
 const args = process.argv.slice(2);
-const passwordGenerator = require('./generator').password;
 
 try {
   if (args.length !== 2 || typeof +args[0] !== 'number' || typeof +args[1] !== 'number') {
@@ -13,7 +12,7 @@ try {
   } else if (+args[1] > 40) {
     throw new Error('max length must be 40 or less');
   }
-  console.log('generated password:', passwordGenerator(+args[0], +args[1]));
+  password(+args[0], +args[1]).then(password => console.log('generated password:', password));
 } catch (e) {
   console.log('error generating password:', e.message);
 }

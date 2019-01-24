@@ -2,10 +2,11 @@
   "name": "password-maker",
   "version": "1.0.0",
   "description": "Generates custom length passwords",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --experimental-modules src/index.mjs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
