@@ -4,6 +4,7 @@
   "description": "Generates custom length passwords",
   "main": "index.js",
   "scripts": {
+    "start": "node src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,8 @@
     "babel-loader": "^8.0.5",
     "webpack": "^4.29.0",
     "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "node-jen": "^1.1.0"
   }
 }
