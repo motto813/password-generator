@@ -1,0 +1,19 @@
+{
+  "name": "password-maker",
+  "version": "1.0.0",
+  "description": "Generates custom length passwords",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/motto813/password-generator.git"
+  },
+  "author": "Paul Hammerschmidt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/motto813/password-generator/issues"
+  },
+  "homepage": "https://github.com/motto813/password-generator#readme"
+}
