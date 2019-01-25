@@ -7,5 +7,5 @@ $ npm i -g custom-password-maker
 ```
 Then execute from the command-line:
 ```
-gen-password minLength maxLength
+$ gen-password minLength maxLength
 ```
