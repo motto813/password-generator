@@ -1,7 +1,7 @@
 {
-  "name": "password-maker",
+  "name": "custom-password-maker",
   "version": "1.0.0",
-  "description": "Generates custom length passwords",
+  "description": "Generate custom length passwords",
   "main": "dist/cli.js",
   "scripts": {
     "start": "babel-node src/index.js",
