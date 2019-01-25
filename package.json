@@ -2,11 +2,13 @@
   "name": "password-maker",
   "version": "1.0.0",
   "description": "Generates custom length passwords",
-  "main": "dist/index.js",
+  "main": "dist/cli.js",
   "scripts": {
-    "start": "node --experimental-modules src/index.mjs",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --mode production"
+    "start": "babel-node src/index.js",
+    "build": "babel src --out-dir dist"
+  },
+  "bin": {
+    "gen-password": "./dist/cli.js"
   },
   "repository": {
     "type": "git",
@@ -18,13 +20,14 @@
     "url": "https://github.com/motto813/password-generator/issues"
   },
   "homepage": "https://github.com/motto813/password-generator#readme",
-  "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "babel-loader": "^8.0.5",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1"
-  },
   "dependencies": {
     "node-jen": "^1.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
+    "@babel/preset-env": "^7.3.1"
   }
 }
